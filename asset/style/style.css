@@ -1,0 +1,121 @@
+body,
+html {
+    height: 100%;
+    width: 1920px;
+    margin: 0;
+    background: url(/asset/img/wallpaer.jpg) center center fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.barra {
+    flex-direction: row;
+}
+.taskbar {
+    flex-direction: row;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 48px;
+    background-color: #3a3a3a;
+    border-top: 1px solid #555;
+    display: flex;
+    align-items: center;
+    padding-left: 8px;
+    z-index: 100;
+}
+
+.start-btn {
+    border-radius: 4px;
+    padding: 4px 8px;
+    font-size: 14px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    border: none;
+}
+
+.start-btn img {
+    width: 35px;
+    margin-right: 2px;
+}
+
+.taskbar-icons img {
+    width: 45px;
+    height: 45px;
+    margin-right: 8px;
+    flex-direction: row;
+}
+
+.desktop-icons {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.desktop-icons2 {
+    position: absolute;
+    top: 20px;
+    left: 130px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.desktop-icon {
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 16px;
+}
+
+.desktop-icon img {
+    width: 85px;
+    height: 85px;
+    margin-bottom: 5px;
+}
+
+.sol img {
+    width: 45px;
+    height: 45px;
+    margin-bottom: 5px;
+}
+.clock {
+    margin-left: auto;
+    margin-right: 10px;
+    color: white;
+    font-size: 25px;
+}
+
+
+.login  {
+    height: 100%;
+    width: 1920px;
+    margin: 0;
+    background: url(/asset/img/wallpaer.jpg) center center fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    position: absolute;
+}
+
+.log-container {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-top: 220px ;
+    text-align: center;
+}
+
+.loginImg {
+    width: 150px;
+    height: 180px;
+    align-items: center;
+}
