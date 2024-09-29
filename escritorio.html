@@ -64,8 +64,21 @@
                     <li><a class="dropdown-item" href="#"><i class="bi bi-person-circle"></i> Facuthompson</a></li>
                     <li><a class="dropdown-item" href="#"><i class="bi bi-file-earmark"></i> Documentos</a></li>
                     <li><a class="dropdown-item" href="#"><i class="bi bi-image"></i> Imagenes</a></li>
-                    <li><a class="dropdown-item" href="#"><i class="bi bi-gear"></i> Configuracion</a></li>
-                    <li><a class="dropdown-item" href="#"><i class="bi bi-exclamation-circle"></i> Inicio/Apagado</a></li>
+                    <div>
+                        <li><a class="dropdown-item" href="#" id="boton" onclick="mostrar();"><i class="bi bi-gear "></i> Configuracion</a></li>
+                        
+                        <script>
+                            function mostrar() {
+                                document.getElementById('btn-config').style.display = 'block';
+                            }
+
+                            function ocultar() {
+                                document.getElementById('btn-config').style.display = 'none';
+                            }
+                        </script>
+                    </div>
+                    <li><a class="dropdown-item" href="#"><i class="bi bi-exclamation-circle"></i> Inicio/Apagado</a>
+                    </li>
                     <li><a class="dropdown-item" href="#"><i class="bi bi-x-lg"></i> Cerrar ventana</a></li>
                 </ul>
             </div>
@@ -91,6 +104,7 @@
                     </ul>
                 </div>
 
+
                 <div class="dropdown">
                     <a href="#"
                         class="d-flex flex-row align-items-center link-body-emphasis text-decoration-none dropdown-toggle show"
@@ -101,11 +115,15 @@
                     <ul class="dropdown-menu text-small shadow show mb-2 bg-success"
                         style="position: absolute; inset: auto auto 0px 0px; margin: 0px; transform: translate(0px, -34px);"
                         data-popper-placement="top-start">
-                        <li><a class="dropdown-item text-white" href="#"><i class="bi bi-file-earmark"></i> Nueva carpeta</a></li>
-                        <li><a class="dropdown-item text-white" href="#"><i class="bi bi-card-text"></i> Nuevo texto</a></li>
+                        <li><a class="dropdown-item text-white" href="#"><i class="bi bi-file-earmark"></i> Nueva
+                                carpeta</a></li>
+                        <li><a class="dropdown-item text-white" href="#"><i class="bi bi-card-text"></i> Nuevo texto</a>
+                        </li>
                         <li><a class="dropdown-item text-white" href="#"><i class="bi bi-brush"></i> Dibujar</a></li>
-                        <li><a class="dropdown-item text-white" href="#"><i class="bi bi-x-lg"></i> Cerrar ventana</a></li>
+                        <li><a class="dropdown-item text-white" href="#"><i class="bi bi-x-lg"></i> Cerrar ventana</a>
+                        </li>
                     </ul>
+
                 </div>
                 <a href="https://www.google.com/?hl=es"><img src="asset/img/Crome.png" alt="Icono Navegador"></a>
             </div>
@@ -113,7 +131,7 @@
             <div>
                 <form class="d-flex" role="search">
                     <input class="form-control me-2" type="search" placeholder="buscar" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Buscar</button>
+                    <a href="escritorio.html"></a><button class="btn btn-outline-success" type="submit">Buscar</button>
                 </form>
             </div>
             <i class="bi bi-wifi"></i>
@@ -138,6 +156,160 @@
             setInterval(updateClock, 1000);
             updateClock();
         </script>
+
 </body>
 
 </html>
+
+
+<div id="btn-config">
+    <button id="btn-off" onclick="ocultar();">X</button>
+    <div class="dropdown-menu position-static d-flex flex-column flex-lg-row align-items-stretch justify-content-start p-3 rounded-3 shadow-lg"
+        data-bs-theme="light">
+        <ul class="list-unstyled d-flex flex-column gap-2">
+            <li>
+                <a href="#"
+                    class="btn btn-hover-light rounded-2 d-flex align-items-start gap-2 py-2 px-3 lh-sm text-start">
+                    <svg class="bi" width="24" height="24">
+                        <use xlink:href="#image-fill"></use>
+                    </svg>
+                    <div>
+                        <strong class="d-block">Sistema</strong>
+                        <small>Pantalla, sonido, notificaciones</small>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#"
+                    class="btn btn-hover-light rounded-2 d-flex align-items-start gap-2 py-2 px-3 lh-sm text-start">
+                    <svg class="bi" width="24" height="24">
+                        <use xlink:href="#music-note-beamed"></use>
+                    </svg>
+                    <div>
+                        <strong class="d-block"><i class="bi bi-globe2"></i>  Red e Internet</strong>
+                        <small>Wi-fi, moodo avion, VPN</small>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#"
+                    class="btn btn-hover-light rounded-2 d-flex align-items-start gap-2 py-2 px-3 lh-sm text-start">
+                    <svg class="bi" width="24" height="24">
+                        <use xlink:href="#question-circle"></use>
+                    </svg>
+                    <div>
+                        <strong class="d-block"><i class="bi bi-person"></i>  Cuentas</strong>
+                        <small>cuentas, correo electronico</small>
+                    </div>
+                </a><br>
+                <a href="#"
+                    class="btn btn-hover-light rounded-2 d-flex align-items-start gap-2 py-2 px-3 lh-sm text-start">
+                    <svg class="bi" width="24" height="24">
+                        <use xlink:href="#music-note-beamed"></use>
+                    </svg>
+                    <div>
+                        <strong class="d-block"><i class="bi bi-sliders"></i>  Accesibilidad</strong>
+                        <small>Narrador, lupa, contraste alto</small>
+                    </div>
+                </a>
+            </li>
+        </ul>
+        <ul class="list-unstyled d-flex flex-column gap-2">
+            <li>
+                <a href="#"
+                    class="btn btn-hover-light rounded-2 d-flex align-items-start gap-2 py-2 px-3 lh-sm text-start">
+                    <svg class="bi" width="24" height="24">
+                        <use xlink:href="#image-fill"></use>
+                    </svg>
+                    <div>
+                        <strong class="d-block"><i class="bi bi-bluetooth"></i>  Dispositivos</strong>
+                        <small>Bluetooth, impresoras, mouse</small>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#"
+                    class="btn btn-hover-light rounded-2 d-flex align-items-start gap-2 py-2 px-3 lh-sm text-start">
+                    <svg class="bi" width="24" height="24">
+                        <use xlink:href="#music-note-beamed"></use>
+                    </svg>
+                    <div>
+                        <strong class="d-block"><i class="bi bi-brush"></i>  Personalizacion</strong>
+                        <small>Fondo, pantalla de bloqueo <br>colores</small>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#"
+                    class="btn btn-hover-light rounded-2 d-flex align-items-start gap-2 py-2 px-3 lh-sm text-start">
+                    <svg class="bi" width="24" height="24">
+                        <use xlink:href="#question-circle"></use>
+                    </svg>
+                    <div>
+                        <strong class="d-block"><i class="bi bi-alarm"></i>Hora e idioma</strong>
+                        <small>Voz, region, fecha/small>
+                    </div>
+                </a>
+                <a href="#"
+                    class="btn btn-hover-light rounded-2 d-flex align-items-start gap-2 py-2 px-3 lh-sm text-start">
+                    <svg class="bi" width="24" height="24">
+                        <use xlink:href="#music-note-beamed"></use>
+                    </svg>
+                    <div>
+                        <strong class="d-block"><i class="bi bi-search"></i>  Buscar</strong>
+                        <small>Buscar mis archivos, permisos</small>
+                    </div>
+                </a>
+            </li>
+
+        </ul>
+        <ul class="list-unstyled d-flex flex-column gap-2">
+            <li>
+                <a href="#"
+                    class="btn btn-hover-light rounded-2 d-flex align-items-start gap-2 py-2 px-3 lh-sm text-start">
+                    <svg class="bi" width="24" height="24">
+                        <use xlink:href="#image-fill"></use>
+                    </svg>
+                    <div>
+                        <strong class="d-block"><i class="bi bi-phone"></i>  Dispositivos moviles</strong>
+                        <small>Vincular Celular</small>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#"
+                    class="btn btn-hover-light rounded-2 d-flex align-items-start gap-2 py-2 px-3 lh-sm text-start">
+                    <svg class="bi" width="24" height="24">
+                        <use xlink:href="#music-note-beamed"></use>
+                    </svg>
+                    <div>
+                        <strong class="d-block"><i class="bi bi-controller"></i>  Juegos</strong>
+                        <small>Game bar, capturas, modo <br>juego</small>
+                    </div>
+                </a>
+                <a href="#"
+                    class="btn btn-hover-light rounded-2 d-flex align-items-start gap-2 py-2 px-3 lh-sm text-start">
+                    <svg class="bi" width="24" height="24">
+                        <use xlink:href="#music-note-beamed"></use>
+                    </svg>
+                    <div>
+                        <strong class="d-block"><i class="bi bi-shield-lock"></i>  Privacidad</strong>
+                        <small>Ubicacion, camara, microfono</small>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#"
+                    class="btn btn-hover-light rounded-2 d-flex align-items-start gap-2 py-2 px-3 lh-sm text-start">
+                    <svg class="bi" width="24" height="24">
+                        <use xlink:href="#question-circle"></use>
+                    </svg>
+                    <div>
+                        <strong class="d-block"><i class="bi bi-arrow-up-circle"></i>  actualización</strong>
+                        <small>Windows update, recuperacion</small>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
